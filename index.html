@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Markdown Preview</title>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+            integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <!--nav>
+            <button title="Editing mode" id="view-editor" class="button-toggle">
+                <i class="fas fa-pencil-alt" data-id="view-editor"></i>
+            </button>
+            <button
+                title="View both"
+                id="view-both"
+                data-id="view-both"
+                class="button-toggle"
+            >
+                <i class="fas fa-table-columns" data-id="view-both"></i>
+            </button>
+            <button
+                title="Reading mode"
+                id="view-preview"
+                class="button-toggle active"
+                data-id="view-preview"
+            >
+                <i class="fas fa-eye" data-id="view-preview"></i>
+            </button>
+        </nav -->
+        <main>
+            <div class="editor-wrapper">
+                <div class="toolbar">
+                    <!--
+                    <button title="undo">
+                        <i class="fas fa-rotate-left"></i>
+                    </button>
+                    <button title="redo">
+                        <i class="fas fa-rotate-right"></i>
+                    </button>
+                    <button title="bold"><i class="fas fa-bold"></i></button>
+                    <button title="italic">
+                        <i class="fas fa-italic"></i>
+                    </button>
+                    <button title="strike through">
+                        <i class="fas fa-strikethrough"></i>
+                    </button>
+                    <button>H</button>
+                    <button title="code block">
+                        <i class="fas fa-code"></i>
+                    </button>
+                    <button title="blockquote">
+                        <i class="fas fa-quote-left"></i>
+                    </button>
+                    <button title="unordered list">
+                        <i class="fa fa-list"></i>
+                    </button>
+                    <button title="numbered list">
+                        <i class="fa fa-list-ol"></i>
+                    </button>
+                    <button title="checkbox">
+                        <i class="fas fa-list-check"></i>
+                    </button>
+                    <button title="link"><i class="fas fa-link"></i></button>
+                    <button title="link an image">
+                        <i class="fas fa-image"></i>
+                    </button>
+                    <button title="table"><i class="fas fa-table"></i></button>
+                    <button title="horizontal line">
+                        <i class="fas fa-minus"></i>
+                    </button>
+            -->
+                    <button id="clear" title="clear">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+                <textarea name="editor" id="editor"></textarea>
+            </div>
+            <div class="preview" id="preview">preview</div>
+        </main>
+        <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>
